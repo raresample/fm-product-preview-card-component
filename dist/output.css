@@ -613,8 +613,18 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .p-4{
   padding: 1rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .font-body{
@@ -629,11 +639,6 @@ video {
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-sm{
@@ -692,6 +697,10 @@ main {
   color: hsl(212, 21%, 14%);
 }
 
+.fm-image {
+  display: none;
+}
+
 section{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -711,8 +720,92 @@ button:hover {
   background-color: hsl(156, 42%, 18%);
 }
 
+@media(min-width:1440px) {
+  main {
+    width: 35rem;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .fm-image {
+    display: block;
+  }
+}
+
 @media (min-width: 1440px){
+  .fm\:my-6{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .fm\:my-8{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .fm\:mb-6{
+    margin-bottom: 1.5rem;
+  }
+
   .fm\:flex{
     display: flex;
+  }
+
+  .fm\:h-full{
+    height: 100%;
+  }
+
+  .fm\:basis-1\/2{
+    flex-basis: 50%;
+  }
+
+  .fm\:p-6{
+    padding: 1.5rem;
+  }
+
+  .fm\:p-8{
+    padding: 2rem;
+  }
+
+  .fm\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .fm\:px-12{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .fm\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .fm\:py-2{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .fm\:py-4{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .fm\:py-16{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .fm\:px-6{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .fm\:px-7{
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
   }
 }

@@ -45,20 +45,24 @@
   </style>
 </head>
 <body class="font-body">
-  <main class="bg-white mt-6 rounded-lg overflow-hidden">
-    <img src="/images/image-product-mobile.jpg" alt="Gabrielle Essence EDP by Chanel">
-    
-    <section>
+  <main class="bg-white mt-6 rounded-lg overflow-hidden fm:flex flex-row">
+    <div class="fm:basis-1/2">
+      <!-- <img src="/images/image-product-mobile.jpg" alt="Gabrielle Essence EDP by Chanel" class="fm:h-full object-cover"> -->
+      <img src="/images/image-product-mobile.jpg" alt="Gabrielle Essence EDP by Chanel" class="mobile-image">
+      <img src="/images/image-product-desktop.jpg" alt="Gabrielle Essence EDP by Chanel" class="fm-image">
+    </div>
+
+    <section class="fm:basis-1/2 fm:py-4 fm:px-7">
       <h1 class="uppercase text-xs my-4">P e r f u m e</h1>
 
       <h2 class="font-accent text-3xl leading-7">Gabrielle Essence Eau De Parfum</h2>
     
-      <div class="description my-4">
+      <div class="description my-4 fm:my-6">
         A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.
       </div>
     
-      <div class="mb-4 flex items-center">
-        <span class="font-accent text-2xl cyan mr-4">
+      <div class="mb-4 fm:mb-6 flex items-center">
+        <span class="font-accent text-3xl cyan mr-4">
           $149.99
         </span>
         <span class="line-through text-xs">

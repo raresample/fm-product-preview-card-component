@@ -25,6 +25,10 @@ main {
   color: hsl(212, 21%, 14%);
 }
 
+.fm-image {
+  display: none;
+}
+
 section {
   @apply px-5 pb-5;
 }
@@ -40,4 +44,18 @@ button {
 
 button:hover {
   background-color: hsl(156, 42%, 18%);
+}
+
+
+@media(min-width:1440px) {
+  main {
+    width: 35rem;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+  .fm-image {
+    display: block;
+  }
 }
